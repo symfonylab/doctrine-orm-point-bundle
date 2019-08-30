@@ -81,7 +81,7 @@ class PointType extends Type
      */
     public function convertToPHPValueSQL($value, $platform): string
     {
-        return sprintf('ST_LineStringFromText(%s)', $value);
+        return sprintf('ST_AsText(%s)', $value);
     }
 
     /**

@@ -1,6 +1,7 @@
 {
   "name": "symfonylab/doctrine-orm-point-bundle",
   "type": "symfony-bundle",
+  "description": "bundle for point type",
   "license": "proprietary",
   "require": {
     "php": ">=7.2",
