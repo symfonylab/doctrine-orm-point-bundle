@@ -93,4 +93,13 @@ class PointType extends Type
     {
         return sprintf('ST_GeomFromText(%s)', $sqlExpr);
     }
+
+    /**
+     * @param AbstractPlatform $platform
+     * @return bool
+     */
+    public function requiresSQLCommentHint(AbstractPlatform $platform)
+    {
+        return true;
+    }
 }
